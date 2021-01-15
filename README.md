@@ -14,8 +14,8 @@ Aktueller Stand: 15.01.2020
 
 Die Tonne dreht, Messungen werden ausgeführt.
 Der Plot funktioniert, müsste jedoch um 90° gedreht werden.
-Die Antenne tut ihren dienst, die Dämpfung ist aber nicht ausreichend. Feldversuche mit
-zusätzlicher Erdung an der Hardware stehen aus.
+Die Antenne tut ihren dienst, die Dämpfung ist aber nicht ausreichend. 
+Feldversuche mit zusätzlicher Erdung an der Hardware stehen aus.
 
 Benutzung der Software:
 
