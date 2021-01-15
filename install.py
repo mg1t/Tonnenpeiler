@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+#
 #Simples Installationsskript fuer die Pakete in Python3
 #2020 DD4MG
 #
