@@ -20,7 +20,7 @@ zusätzlicher Erdung an der Hardware stehen aus.
 Benutzung der Software:
 
 Vor der ersten Ausführung müssen die eventuell fehlenden Python3 Pakete mit der Datei
-"instal.py" nachinstalliert werden. dies geschieht mit dem Kommando: "python3 install.py"
+"install.py" nachinstalliert werden. dies geschieht mit dem Kommando: "python3 install.py"
 
 Der Raspberry muss neu gestartet werden, damit die RTL-SDR-Treiber richtig geladen werden.
 Wird dies nicht getan, kann sich der Raspberry aufhängen. (Hardwarereset)
