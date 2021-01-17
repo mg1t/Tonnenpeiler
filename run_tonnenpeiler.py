@@ -29,6 +29,13 @@ _sdr_gain_="auto"
 #in Kernelpanik und muss hardwaremäßig resettet werden
 _sdr_samples_ = 1*512
 #
+#Die Bandbreite um die _center_frequency_ kann hier eingestellt werden
+#Minimum ist "2".
+_band_width_=10
+#
+#Korrektur falls ungerade Zahl als Bandbreite
+if (_band_width_ % 2): _band_width_=_band_width_ +1
+
 
 
 #Libary für plotten
@@ -98,7 +105,9 @@ while(True):
         #fft der daten
         fft_samples=np.fft.fft(samples)
         if debug: print(",fft done",end="")
-        avg=mean(abs(fft_samples))
+        #Mittelwert nur über die Bandbreite um CenterFrequenz ziehen
+        mitte=int(len(fft_samples)/2)
+        avg=mean(abs(fft_samples[mitte-int(_band_width_/2):mitte+int(_band_width_/2)]))
         if debug: print(",meaning done",end="")
         messungen.append(avg)
         if debug: print(",append done",end="")
